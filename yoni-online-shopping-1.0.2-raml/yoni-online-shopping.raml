@@ -1,0 +1,117 @@
+#%RAML 1.0 
+title: yoni-online-shopping
+version: 1.0
+mediaType: application/json
+protocols:
+  - http
+annotationTypes:
+  annotations: !include annotation.raml
+documentation:
+  - !include documentation.raml
+uses:
+  myLib: library.raml
+
+
+/users:
+  
+  description: This method helps us to retrieve users list
+  get:
+    queryParameters:
+      id:
+        description: id
+        type: integer
+        required: false # not mandatory to enter, if true it's manadatory
+      fullname:
+        description: fname and lname
+        type: string
+        enum: # enum represents a group of constants (unchangeable variables
+          [John, Mike]
+      username:
+        description: user name
+        maxLength: 10
+        minLength: 2
+        required: false
+        default: john
+      address:
+    description: This gets/retrieves users list
+    responses:
+      200:
+        body:
+          application/json:
+            type: myLib.users
+            example: !include examples/user.raml
+            
+  is: myLib.responseMessage
+    
+  /{userid}:
+
+    get:
+      responses:
+       201:
+        body:
+          application/json:
+            type: myLib.users
+            example: !include examples/user.raml
+  type:
+    myLib.collection:
+      resourcePath: myLib.user
+    is: myLib.responseMessage
+ 
+    
+  post:
+    responses:
+      201: 
+        body:
+          application/json:
+            type: myLib.users
+            example: !include examples/user.raml
+    
+/product:
+  get:
+   
+    responses:
+      200:
+        body:
+          application/json:
+            # type: users
+            # example: !include examples/user.raml
+  type:
+    myLib.collection:
+      resourcePath: myLib.product
+  is: myLib.responseMessage
+
+
+/orders:
+  get:
+   
+    responses:
+      200:
+        body:
+          application/json:
+            # type: users
+            # example: !include examples/user.raml
+  type:
+   myLib.collection:
+      resourcePath: myLib.orders
+  is: myLib.responseMessage
+
+    
+/category:
+
+  get:
+   
+    responses:
+      200:
+        body:
+          application/json:
+            # type: users
+            # example: !include examples/user.raml
+  type:
+    myLib.collection:
+      resourcePath: myLib.category
+  is: myLib.responseMessage
+
+    
+
+
+

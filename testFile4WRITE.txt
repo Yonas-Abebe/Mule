@@ -1,0 +1,3 @@
+Static file writing - first option - free text this message from Any point studio under literal mode!{
+    "Message": "Dynamic file writing - second option - free texting this message from Postman for test!"
+}

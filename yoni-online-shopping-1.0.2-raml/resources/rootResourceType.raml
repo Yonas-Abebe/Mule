@@ -1,8 +1,0 @@
-#%RAML 1.0 ResourceType
-get:
-  description: resource <<resourcePathName>> not found 
-  responses:
-    500: 
-      body:
-        application/json:
-          example: {message: "<<resourcePath>> resource error on the server-side!"}

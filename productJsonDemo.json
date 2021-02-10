@@ -1,0 +1,13 @@
+{
+  "products": [
+    {
+      "product": {
+        "class": "iPhone",
+        "model": "12 Pro",
+        "category": "iDevice",
+        "price": "999",
+        "brand": "Apple"
+      }
+    }
+  ]
+}

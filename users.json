@@ -1,0 +1,54 @@
+{[ {
+    "userid": 1,
+    "username": "yoni",
+    "email": "yoni@gmail.com",
+    "date_joined": 1121,
+    "modified": 1521,
+    "type": 1,
+    "deleted": false    },
+    {
+    "userid": 2
+    "username": "Dave",
+    "email": "dave@gmail.com",
+    "date_joined": 12121,
+    "modified": 23456,
+    "type": 5,
+    "deleted": false    },
+
+    {
+    "userid": 3
+    "username": "Kalie",
+    "email": "kal@gmail.com",
+    "date_joined": 12221,
+    "modified": 1921,
+    "type": 7,
+    "deleted": false,
+       },
+
+    {
+    "userid": 4
+    "email": "mer@gmail.com",
+    "date_joined": 11121,
+    "modified": 1821,
+    "type": 6,
+    "deleted": false,
+    "username": "Meri"    },
+
+    {
+    "userid": 5
+    "username": "Selam",
+    "email": "sel@gmail.com",
+    "date_joined": "1121",
+    "modified": 1321,
+    "type": 5,
+    "deleted": false     },
+ {
+    "userid": 7
+    "username": "Asheber",
+    "email": "yoni@gmail.com",
+    "date_joined": 1121,
+    "modified": 1521,
+    "type": 1,
+    "deleted": false    }
+  ]
+}
